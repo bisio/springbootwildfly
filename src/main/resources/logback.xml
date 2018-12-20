@@ -1,0 +1,25 @@
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - DIOCANE  %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>/tmp/fuffa.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n DIOCANE
+			</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="peaky">
+		<appender-ref ref="FILE"/>
+	</logger>
+	
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
