@@ -2,7 +2,7 @@
 	<appender name="STDOUT"
 		class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - DIOCANE  %msg%n
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -  %msg%n
 			</pattern>
 		</encoder>
 	</appender>
@@ -10,7 +10,7 @@
 		<file>/tmp/fuffa.log</file>
 		<append>true</append>
 		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n DIOCANE
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n 
 			</pattern>
 		</encoder>
 	</appender>
